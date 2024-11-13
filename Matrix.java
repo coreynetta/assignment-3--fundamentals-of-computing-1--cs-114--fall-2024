@@ -46,6 +46,39 @@ public class Matrix {
     }
 
     public void flipMatrix() {
+      int[][] tempMatrix = new int[dimension][dimension];
+      int input = dimension * dimension;
+      for (int row = 0; row < dimension; row++) {
+          for (int column = 0; column < dimension; column++) {
+              if (row + column == dimension - 1) {
+                  tempMatrix[row][column] = assignmentMatrix[row][column];
+              }
+          }
+      }
+
+      for (int row = 0; row < dimension; row++) {
+          for (int column = 0; column < dimension; column++) {
+              if (row + column != dimension - 1) {
+                  while (true) {
+                      boolean isDiagonal = false;
+                      for (int i = 0; i < dimension; i++) {
+                          if (tempMatrix[i][dimension - 1 - i] == input) {
+                              isDiagonal = true;
+                              break;
+                          }
+                      }
+                      if (!isDiagonal) {
+                          tempMatrix[row][column] = input--;
+                          break;
+                      }
+                      input--;
+                  }
+              }
+          }
+      }
+      assignmentMatrix = tempMatrix;
+  }
+
 
     public void printFlippedMatrix() {
         for (int row = 0; row < dimension; row++) {
