@@ -76,14 +76,11 @@ public class Matrix {
         int dimension = scanner.nextInt();
 
         Matrix matrix = new Matrix(dimension);
-
         System.out.println("\nPopulated Matrix:");
         matrix.populateMatrix();
         matrix.printMatrix();
-
         System.out.println("\nDefault Values Matrix:");
         matrix.printDefaultValues();
-
         System.out.println("\nFlipped Matrix:");
         matrix.flipMatrix();
         matrix.printFlippedMatrix();
