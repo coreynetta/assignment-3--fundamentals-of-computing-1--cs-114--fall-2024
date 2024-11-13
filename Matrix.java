@@ -9,6 +9,8 @@ public class Matrix {
       for (int column = 0; column < dimension; column++) {
         if (row + column == dimension - 1) {
           System.out.print(assignmentMatrix[row][column] + "\t");
+                // Check if the current cell is part of the diagonal marked in printMatrix
+                    continue; // Skip the diagonal cells
         }
       }
       System.out.println();
