@@ -13,8 +13,6 @@ public class Matrix {
                     continue; // Skip the diagonal cells
                     System.out.print("*\033[34m" + assignmentMatrix[row][column] + "\033[0m*\t");
         }
-      }
-      System.out.println();
     }
   }
 
@@ -27,8 +25,6 @@ public class Matrix {
           System.out.print(0 + "\t");
                     System.out.print("*\033[34m0\033[0m*\t");
         }
-      }
-      System.out.println();
     }
                     System.out.print("*\033[34m" + assignmentMatrix[row][column] + "\033[0m*\t");
     }
