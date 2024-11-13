@@ -9,15 +9,6 @@ public class Matrix {
         assignmentMatrix = new int[dimension][dimension];
         System.out.println("Dimensions of Matrix " + dimension + "*" + dimension + ":");
     }
-  }
-
-  public void printMatrix() {
-    for (int row = 0; row < dimension; row++) {
-      for (int column = 0; column < dimension; column++) {
-        if (row + column == dimension - 1) {
-          System.out.print(assignmentMatrix[row][column] + "\t");
-                // Check if the current cell is part of the diagonal marked in printMatrix
-                    continue; // Skip the diagonal cells
 
     public void populateMatrix() {
         int input = 1;
@@ -40,15 +31,6 @@ public class Matrix {
             System.out.println();
         }
     }
-  }
-
-  public void printDefaultValues() (
-    for (int row =0; row < dimension; row++) {
-      for (int column = 0; column < dimension; column++) {
-        if (row + column == dimension - 1) {
-          System.out.print("*" + 0 + "*\t");
-        } else {
-          System.out.print(0 + "\t");
 
     public void printDefaultValues() {
         for (int row = 0; row < dimension; row++) {
@@ -106,5 +88,4 @@ public class Matrix {
         matrix.flipMatrix();
         matrix.printFlippedMatrix();
     }
-  )
 }
