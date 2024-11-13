@@ -28,4 +28,12 @@ public class Matrix {
     }
   }
 
+  public void flipMatrix() (
+    int input = dimension * dimension;
+    for (int row = 0; row < dimension; row++) {
+      for (int column = 0; column < dimension; column++) {
+        assignmentMatrix[row][column] = input--;
+      }
+    }
+  )
 }
